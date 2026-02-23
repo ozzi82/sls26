@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir /s C:SLSsls26)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npx create-next-app@latest sls26-temp --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --use-npm --no-turbopack)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx next build:*)",
+      "Bash(npm run dev:*)",
+      "Bash(timeout:*)",
+      "Bash(taskkill:*)",
+      "Bash(npx next dev --turbopack)",
+      "Bash(kill:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:kalisign.com)",
+      "WebFetch(domain:www.kalisign.com)",
+      "WebFetch(domain:web.archive.org)",
+      "WebFetch(domain:vecto.bitrogroup.com)",
+      "WebFetch(domain:bitrogroup.com)",
+      "WebFetch(domain:www.signs101.com)",
+      "Bash(del /f \"C:\\\\SLS\\\\sls26\\\\.next\\\\dev\\\\lock\")",
+      "Bash(dir /s /b \"C:\\\\SLS\\\\sls26\\\\app\")",
+      "Bash(findstr:*)",
+      "Bash(python:*)",
+      "Bash(pip install:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(dir C:SLSsls26)",
+      "Bash(dir \"C:\\\\SLS\\\\sls26\")",
+      "Bash(gh repo view:*)",
+      "Bash(where:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}
