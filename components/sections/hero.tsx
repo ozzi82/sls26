@@ -34,7 +34,7 @@ export function Hero() {
             <div className="flex items-center gap-3 mb-8">
               <div className="h-px w-10 bg-brand-gold" />
               <p className="text-brand-gold text-xs font-semibold uppercase tracking-[0.25em]">
-                Wholesale Only &mdash; EdgeLuxe by Sunlite Signs
+                Trade Only &mdash; Wholesale Sign Fabrication
               </p>
             </div>
           </FadeIn>
@@ -42,19 +42,19 @@ export function Hero() {
           {/* Headline */}
           <FadeIn direction="left" delay={0.2}>
             <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-brand-warm-white">
-              Custom European
+              Wholesale Channel Letter
               <br />
-              <span className="text-gradient-gold">Signage</span>
+              &amp; <span className="text-gradient-gold">Sign Fabrication</span>
               <br />
-              Wholesale.
+              Partner.
             </h1>
           </FadeIn>
 
           {/* Subheadline */}
           <FadeIn direction="left" delay={0.35}>
             <p className="mt-7 text-lg md:text-xl text-brand-steel-light/90 leading-relaxed max-w-lg">
-              Channel letters, cabinet signs, and SEG lightboxes — German-engineered and UL listed.
-              Wholesale only for sign professionals.
+              Built for sign companies, fabricators &amp; agencies.
+              Fast quotes. Reliable production. Private label shipping.
             </p>
           </FadeIn>
 
@@ -62,30 +62,33 @@ export function Hero() {
           <FadeIn direction="left" delay={0.5}>
             <div className="mt-10 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" size="lg">
-                Get Your Wholesale Quote
+                Request Wholesale Pricing
               </Button>
-              <Button href="/projects" variant="secondary" size="lg">
-                See Our Projects
+              <Button href="/products" variant="secondary" size="lg">
+                View Product Catalog
               </Button>
             </div>
+            <p className="mt-4 text-xs text-brand-steel italic">
+              Trade-only manufacturer. We do not sell to end customers.
+            </p>
           </FadeIn>
 
           {/* Quick proof — small inline stats */}
           <FadeIn direction="left" delay={0.6}>
             <div className="mt-12 flex items-center gap-8">
               <div>
-                <p className="font-heading text-2xl font-bold text-brand-warm-white">21</p>
-                <p className="text-xs text-brand-steel uppercase tracking-wider">Day Delivery</p>
-              </div>
-              <div className="h-8 w-px bg-brand-border" />
-              <div>
-                <p className="font-heading text-2xl font-bold text-brand-warm-white">48hr</p>
+                <p className="font-heading text-2xl font-bold text-brand-warm-white">24hr</p>
                 <p className="text-xs text-brand-steel uppercase tracking-wider">Quote Turnaround</p>
               </div>
               <div className="h-8 w-px bg-brand-border" />
               <div>
-                <p className="font-heading text-2xl font-bold text-brand-warm-white">3yr</p>
-                <p className="text-xs text-brand-steel uppercase tracking-wider">Full Warranty</p>
+                <p className="font-heading text-2xl font-bold text-brand-warm-white">21</p>
+                <p className="text-xs text-brand-steel uppercase tracking-wider">Day Production</p>
+              </div>
+              <div className="h-8 w-px bg-brand-border" />
+              <div>
+                <p className="font-heading text-2xl font-bold text-brand-warm-white">Blind</p>
+                <p className="text-xs text-brand-steel uppercase tracking-wider">Ship Included</p>
               </div>
             </div>
           </FadeIn>

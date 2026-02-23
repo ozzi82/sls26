@@ -214,7 +214,7 @@ export function SEGLightboxesContent() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" size="lg">
-                Get a Quote
+                Get Wholesale Pricing
               </Button>
               <Button href="tel:+16892940912" variant="outline" size="md">
                 Call: (689) 294-0912
@@ -439,7 +439,7 @@ export function SEGLightboxesContent() {
             Send us your specs or artwork and we&apos;ll return production drawings, renderings, and a detailed quote within 24&ndash;48 hours.
           </p>
           <Button href="/contact" variant="primary" size="lg">
-            Request a Quote
+            Request Wholesale Pricing
           </Button>
         </div>
       </Container>

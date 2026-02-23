@@ -52,6 +52,9 @@ export function Header() {
           <span className="font-heading text-xl font-light tracking-widest text-brand-steel-light">
             SIGNS
           </span>
+          <span className="ml-3 hidden sm:inline text-[10px] font-semibold uppercase tracking-widest bg-brand-gold/10 text-brand-gold border border-brand-gold/20 px-2 py-0.5 rounded-sm">
+            Trade Only
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -69,7 +72,7 @@ export function Header() {
             href="/contact"
             className="ml-2 inline-flex items-center rounded-sm bg-brand-gold px-5 py-2.5 text-sm font-semibold text-brand-black transition-all duration-300 hover:bg-brand-gold-light glow-gold-subtle hover:glow-gold"
           >
-            Get a Quote
+            Request Wholesale Pricing
           </Link>
         </div>
 
@@ -131,7 +134,7 @@ export function Header() {
                   onClick={() => setIsMobileOpen(false)}
                   className="mt-4 inline-flex items-center rounded-sm bg-brand-gold px-8 py-3.5 text-base font-semibold text-brand-black transition-all duration-300 hover:bg-brand-gold-light"
                 >
-                  Get a Quote
+                  Request Wholesale Pricing
                 </Link>
               </motion.div>
             </div>

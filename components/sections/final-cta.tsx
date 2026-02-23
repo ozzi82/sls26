@@ -18,21 +18,21 @@ export function FinalCTA() {
         <div className="text-center max-w-2xl mx-auto">
           <FadeIn>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-brand-warm-white">
-              Ready to Elevate Your Next Project?
+              Ready to Partner With Us?
             </h2>
           </FadeIn>
 
           <FadeIn delay={0.15}>
             <p className="mt-5 text-lg text-brand-steel-light">
-              Get a wholesale quote in 24&ndash;48 hours. No minimums on your first
-              order.
+              Get wholesale pricing in 24 hours. Blind-shipped direct to your job site.
+              No minimums on your first order.
             </p>
           </FadeIn>
 
           <FadeIn delay={0.3}>
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button href="/contact" variant="primary" size="lg">
-                Request a Quote
+                Request Wholesale Pricing
               </Button>
               <Button
                 href="tel:+16892940912"

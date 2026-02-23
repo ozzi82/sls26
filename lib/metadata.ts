@@ -8,7 +8,7 @@ export function generateLocalBusinessSchema() {
     name: 'Sunlite Signs LLC',
     alternateName: 'Sunlite Signs',
     description:
-      'Premium wholesale manufacturer of German-engineered trimless LED channel letters, halo-lit channel letters, cast block acrylic letters, and custom signage. EdgeLuxe product line. Serving sign companies exclusively across USA and Canada with UL listed, IP67 waterproof products.',
+      'Trade-only wholesale manufacturer of German-engineered trimless LED channel letters, halo-lit channel letters, cast block acrylic letters, and custom signage. EdgeLuxe product line. Blind shipping and private label programs for sign companies across USA and Canada.',
     url: 'https://sunlitesigns.com',
     telephone: ['+1-689-294-0912', '+1-651-230-2827'],
     email: 'info@sunlitesigns.com',
@@ -32,6 +32,10 @@ export function generateLocalBusinessSchema() {
       'EdgeLuxe channel letters',
       'Wholesale signage manufacturer',
       'IP67 waterproof channel letters',
+      'Trade-only sign fabrication',
+      'Blind shipping signage',
+      'White label channel letters',
+      'OEM sign manufacturing',
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -70,7 +74,7 @@ export function generateOrganizationSchema() {
     name: 'Sunlite Signs LLC',
     url: 'https://sunlitesigns.com',
     description:
-      'Wholesale-only manufacturer of premium EdgeLuxe trimless channel letters and LED signage, German-engineered in partnership with LKF Lichtwerbung, Nuremberg.',
+      'Trade-only wholesale manufacturer of premium EdgeLuxe trimless channel letters and LED signage. German-engineered in partnership with LKF Lichtwerbung, Nuremberg. Blind shipping and private label programs available.',
     brand: {
       '@type': 'Brand',
       name: 'EdgeLuxe',
@@ -102,10 +106,10 @@ export function generateWebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     '@id': 'https://sunlitesigns.com/#website',
-    name: 'Sunlite Signs - Wholesale Channel Letter Manufacturer',
+    name: 'Sunlite Signs - Trade-Only Wholesale Channel Letter Fabrication',
     url: 'https://sunlitesigns.com',
     description:
-      'Premium wholesale manufacturer of trimless channel letters, halo-lit letters, cast block acrylic, and LED signage. German-engineered, UL listed. 24-48hr quotes, 21-day delivery. USA & Canada.',
+      'Trade-only wholesale manufacturer of trimless channel letters, halo-lit letters, cast block acrylic, and LED signage. German-engineered, UL listed. 24hr quotes, 21-day production, blind shipping. USA & Canada.',
     publisher: { '@id': 'https://sunlitesigns.com/#organization' },
   }
 }

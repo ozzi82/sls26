@@ -89,7 +89,7 @@ export function CategoryBlocks() {
           <div className="py-5 md:py-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-3">
             <FadeIn delay={0.1}>
               <span className="text-sm text-brand-steel-light font-medium tracking-wide">
-                Trusted by <span className="text-brand-warm-white font-semibold">200+</span> sign companies across USA &amp; Canada
+                Trusted by <span className="text-brand-warm-white font-semibold">200+</span> Sign Professionals Nationwide
               </span>
             </FadeIn>
             <FadeIn delay={0.2}>

@@ -34,8 +34,8 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-brand-steel leading-relaxed max-w-xs">
-              Custom European signage wholesale — channel letters, cabinet signs,
-              and SEG lightboxes. Serving sign companies across USA and Canada.
+              Trade-only wholesale sign fabrication. Channel letters, cabinet signs,
+              and SEG lightboxes for sign companies across USA &amp; Canada.
             </p>
           </div>
 
@@ -119,7 +119,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Sunlite Signs LLC. All rights reserved.
           </p>
           <p className="text-xs text-brand-steel">
-            Serving sign companies across USA &amp; Canada
+            Trade Only &mdash; Serving sign companies exclusively across USA &amp; Canada
           </p>
         </div>
       </div>

@@ -82,6 +82,19 @@ export default async function ProductDetailPage({ params }: Props) {
           <span className="text-brand-steel-light">{product.modelNumber} - {product.name}</span>
         </nav>
 
+        {/* Trade-only banner */}
+        <div className="mb-8 rounded-sm border border-brand-gold/20 bg-brand-gold/5 px-5 py-3 flex items-center gap-3">
+          <svg className="w-4 h-4 text-brand-gold flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <p className="text-sm text-brand-steel-light">
+            <span className="text-brand-gold font-medium">Trade Only</span> &mdash; Wholesale pricing available for sign companies and resellers.{' '}
+            <Link href="/contact" className="text-brand-gold underline underline-offset-2 hover:text-brand-gold-light transition-colors">
+              Request pricing
+            </Link>
+          </p>
+        </div>
+
         {/* Top Section: Image Gallery + Summary */}
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 mb-16 lg:mb-24">
           {/* Interactive Image Gallery with glow hover */}
@@ -139,7 +152,7 @@ export default async function ProductDetailPage({ params }: Props) {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <Button href="/contact" variant="primary" size="lg">
-                Get a Quote
+                Get Wholesale Pricing
               </Button>
               <Button href="tel:+16892940912" variant="outline" size="md">
                 Call: (689) 294-0912

@@ -24,11 +24,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sunlitesigns.com'),
   title: {
-    default: 'Wholesale Channel Letter Manufacturer | Trimless LED Signage | Sunlite Signs',
+    default: 'Wholesale Channel Letter Fabrication | Trade-Only Sign Manufacturer | Sunlite Signs',
     template: '%s | Sunlite Signs',
   },
   description:
-    'Premium wholesale manufacturer of trimless channel letters, cast block acrylic, and LED signage. German-engineered, UL listed. 24-48hr quotes, 21-day delivery. USA & Canada.',
+    'Trade-only wholesale manufacturer of trimless channel letters, cast block acrylic, and LED signage. German-engineered, UL listed. 24hr quotes, 21-day production, blind shipping. USA & Canada.',
   keywords: [
     'wholesale channel letters',
     'trimless channel letters',
@@ -49,6 +49,11 @@ export const metadata: Metadata = {
     'face lit channel letters wholesale',
     'halo lit signs wholesale',
     'wholesale sign fabricator',
+    'trade only channel letters',
+    'blind ship channel letters',
+    'white label channel letters',
+    'sign company supplier',
+    'OEM channel letter manufacturer',
   ],
   authors: [{ name: 'Sunlite Signs LLC' }],
   openGraph: {
@@ -56,9 +61,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://sunlitesigns.com',
     siteName: 'Sunlite Signs',
-    title: 'Wholesale Channel Letter Manufacturer | Sunlite Signs',
+    title: 'Trade-Only Wholesale Channel Letter Fabrication | Sunlite Signs',
     description:
-      'Premium wholesale trimless channel letters, German-engineered with UL listed components. 24-48hr quotes, 21-day delivery across USA & Canada.',
+      'Trade-only wholesale channel letters, German-engineered with UL listed components. 24hr quotes, 21-day production, blind shipping across USA & Canada.',
   },
   robots: {
     index: true,

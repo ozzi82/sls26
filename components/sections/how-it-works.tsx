@@ -6,27 +6,27 @@ import { StaggerContainer, StaggerItem } from '@/components/ui/motion'
 const steps = [
   {
     number: '01',
-    title: 'Send Your Specs',
+    title: 'Send Artwork',
     description:
-      'Email us your artwork, dimensions, and specs. Or just tell us what you need \u2014 we\u2019ll figure out the rest.',
+      'Email us your artwork, dimensions, and specs. AI files, PDFs, napkin sketches \u2014 whatever you have, we\u2019ll work with it.',
   },
   {
     number: '02',
-    title: 'Review Drawings',
+    title: 'Get Your Quote in 24h',
     description:
-      'Within 24\u201348 hours, you\u2019ll receive production drawings with day and night renderings for client approval.',
+      'Within 24 hours you receive production drawings, day/night renderings, and a detailed line-item wholesale quote.',
   },
   {
     number: '03',
-    title: 'We Manufacture',
+    title: 'Approve & Manufacture',
     description:
-      'Your order goes into production with German-engineered quality standards and UL listed components.',
+      'Approve the drawings and we begin production. German-engineered quality, UL listed components, 21-day turnaround.',
   },
   {
     number: '04',
-    title: 'You Install',
+    title: 'Blind Ship to Job Site',
     description:
-      'Your order arrives in ~21 days, ready to install. Full documentation, wiring diagrams, and 1:1 patterns included.',
+      'We ship direct to your client\u2019s job site in your name. No Sunlite branding. Your client sees only your company.',
   },
 ]
 
@@ -36,7 +36,7 @@ export function HowItWorks() {
       <Container>
         <SectionHeader
           title="How It Works"
-          subtitle="From first contact to installation, we make it straightforward."
+          subtitle="From artwork to installation \u2014 here is how wholesale works."
         />
 
         <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">

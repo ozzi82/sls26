@@ -182,7 +182,7 @@ export default function AboutPage() {
             <FadeIn delay={0.15}>
               <div className="mt-8">
                 <Button href="/contact" variant="primary" size="lg">
-                  Request a Quote
+                  Request Wholesale Pricing
                 </Button>
               </div>
             </FadeIn>
