@@ -73,6 +73,10 @@ export function WholesaleForm() {
       }
 
       setSubmitted(true)
+      window.gtag?.('event', 'wholesale_lead_submit', {
+        event_category: 'lead',
+        event_label: 'wholesale_form',
+      })
     } catch {
       setError('Something went wrong. Please try again or call us directly.')
     } finally {

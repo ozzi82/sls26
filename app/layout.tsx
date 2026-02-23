@@ -7,7 +7,13 @@ import {
   generateOrganizationSchema,
   generateWebSiteSchema,
 } from '@/lib/metadata'
+import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
+
+const GA_ID = 'G-ELNZL9DEE3'
+// TODO: Replace with your Hotjar Site ID from https://insights.hotjar.com
+const HOTJAR_ID = 'HOTJAR_SITE_ID'
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -97,11 +103,41 @@ export default function RootLayout({
             __html: JSON.stringify(generateWebSiteSchema()),
           }}
         />
+        {/* GA4 */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+
+        {/* Hotjar — replace HOTJAR_SITE_ID with your actual ID */}
+        {HOTJAR_ID !== 'HOTJAR_SITE_ID' && (
+          <Script id="hotjar-init" strategy="afterInteractive">
+            {`
+              (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:${HOTJAR_ID},hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `}
+          </Script>
+        )}
       </head>
       <body className="min-h-screen flex flex-col">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

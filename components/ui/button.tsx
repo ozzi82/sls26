@@ -1,4 +1,12 @@
+'use client'
+
 import Link from 'next/link'
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void
+  }
+}
 
 interface ButtonProps {
   children: React.ReactNode
@@ -8,6 +16,13 @@ interface ButtonProps {
   className?: string
   type?: 'button' | 'submit'
   onClick?: () => void
+}
+
+function trackCTAClick(label: string) {
+  window.gtag?.('event', 'wholesale_cta_click', {
+    event_category: 'engagement',
+    event_label: label,
+  })
 }
 
 export function Button({
@@ -40,8 +55,13 @@ export function Button({
   const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`
 
   if (href) {
+    const label = typeof children === 'string' ? children : ''
     return (
-      <Link href={href} className={classes}>
+      <Link
+        href={href}
+        className={classes}
+        onClick={href === '/contact' ? () => trackCTAClick(label) : undefined}
+      >
         {children}
       </Link>
     )
