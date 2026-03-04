@@ -134,7 +134,7 @@ export default function HaloLitPage() {
 
       {/* Hero */}
       <section className="relative bg-primary-dark overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(200,164,78,0.08),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(232,89,12,0.08),transparent_60%)]" />
         <div className="relative z-10 container-max section-padding pt-32 md:pt-36">
           <Breadcrumbs
             items={[

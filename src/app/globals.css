@@ -23,7 +23,7 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-4 bg-brand-gold text-primary-dark font-heading font-semibold text-sm uppercase tracking-wider rounded hover:bg-brand-gold-light transition-colors duration-300;
+    @apply inline-flex items-center justify-center px-8 py-4 bg-brand-gold text-white font-heading font-bold text-sm uppercase tracking-wider rounded hover:bg-brand-gold-light transition-colors duration-300;
   }
 
   .btn-secondary {
@@ -43,7 +43,7 @@
   }
 
   .gold-line {
-    @apply w-16 h-0.5 bg-brand-gold;
+    @apply w-16 h-1 bg-brand-gold;
   }
 
   .placeholder-image {

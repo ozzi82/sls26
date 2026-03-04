@@ -98,7 +98,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="relative bg-primary-dark overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark via-navy/20 to-primary-dark" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(200,164,78,0.06),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(232,89,12,0.06),transparent_70%)]" />
 
         <div className="relative z-10 pt-20">
           <div className="container-max px-4 sm:px-6 lg:px-8">
@@ -417,7 +417,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="section-padding bg-primary-dark relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(200,164,78,0.06),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(232,89,12,0.06),transparent_70%)]" />
         <div className="container-max relative z-10">
           <AnimatedSection>
             <div className="text-center">
