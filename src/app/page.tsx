@@ -1,8 +1,12 @@
 import Link from "next/link";
 import {
   ArrowRight,
+  Clock,
+  Globe,
   Lock,
   Phone,
+  Shield,
+  Truck,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import HeroContent from "@/components/HeroContent";
@@ -69,6 +73,32 @@ export default function Home() {
               </a>
             </div>
           </HeroContent>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/40 backdrop-blur-sm">
+          <div className="container-max px-4 sm:px-6 lg:px-8 py-3">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[10px] font-heading uppercase tracking-wider text-white/50">
+              <span className="flex items-center gap-1.5">
+                <Lock className="w-3 h-3 text-brand-gold" /> Wholesale Only
+              </span>
+              <span className="hidden sm:inline text-white/20">|</span>
+              <span className="flex items-center gap-1.5">
+                <Shield className="w-3 h-3 text-brand-gold" /> UL Listed
+              </span>
+              <span className="hidden sm:inline text-white/20">|</span>
+              <span className="flex items-center gap-1.5">
+                <Globe className="w-3 h-3 text-brand-gold" /> German Engineering
+              </span>
+              <span className="hidden sm:inline text-white/20">|</span>
+              <span className="flex items-center gap-1.5">
+                <Clock className="w-3 h-3 text-brand-gold" /> 48-Hour Quotes
+              </span>
+              <span className="hidden sm:inline text-white/20">|</span>
+              <span className="flex items-center gap-1.5">
+                <Truck className="w-3 h-3 text-brand-gold" /> USA &amp; Canada
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
