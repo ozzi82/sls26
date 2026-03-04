@@ -74,11 +74,11 @@ export default function GetAQuotePage() {
                     </h3>
                     <div className="space-y-4">
                       <a
-                        href="tel:+1234567890"
+                        href="tel:+6892940912"
                         className="flex items-center gap-3 text-text-light/60 hover:text-brand-gold transition-colors"
                       >
                         <Phone className="w-5 h-5 text-brand-gold" />
-                        (123) 456-7890
+                        (689) 294-0912
                       </a>
                       <a
                         href="mailto:hello@sunlitesigns.com"

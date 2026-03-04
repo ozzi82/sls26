@@ -217,8 +217,8 @@ export default function FAQPage() {
                 </a>
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-text-dark/50">
-                <a href="tel:+1234567890" className="hover:text-brand-gold transition-colors">
-                  (123) 456-7890
+                <a href="tel:+6892940912" className="hover:text-brand-gold transition-colors">
+                  (689) 294-0912
                 </a>
                 <a
                   href="mailto:hello@sunlitesigns.com"

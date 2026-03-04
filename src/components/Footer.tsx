@@ -94,9 +94,9 @@ export default function Footer() {
         {/* Contact Bar */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-center gap-6 text-sm text-text-light/50">
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-brand-gold transition-colors">
+            <a href="tel:+6892940912" className="flex items-center gap-2 hover:text-brand-gold transition-colors">
               <Phone className="w-4 h-4" />
-              (123) 456-7890
+              (689) 294-0912
             </a>
             <a href="mailto:hello@sunlitesigns.com" className="flex items-center gap-2 hover:text-brand-gold transition-colors">
               <Mail className="w-4 h-4" />

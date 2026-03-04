@@ -8,7 +8,7 @@ export default function MobileCTABar() {
     <div className="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-primary-dark/95 backdrop-blur-sm border-t border-white/10 px-4 py-3">
       <div className="flex items-center gap-3">
         <a
-          href="tel:+1234567890"
+          href="tel:+6892940912"
           className="flex items-center justify-center w-12 h-12 border border-white/20 rounded text-text-light hover:text-brand-gold transition-colors"
           aria-label="Call us"
         >

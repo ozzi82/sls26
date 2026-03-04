@@ -29,8 +29,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "(123) 456-7890",
-    href: "tel:+1234567890",
+    value: "(689) 294-0912",
+    href: "tel:+6892940912",
     description: "Mon-Fri, 8am-5pm EST — Trade inquiries only",
   },
   {

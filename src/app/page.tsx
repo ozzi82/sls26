@@ -1,14 +1,10 @@
 import Link from "next/link";
 import {
-  Shield,
-  Truck,
-  Clock,
-  Globe,
   ArrowRight,
   Lock,
-  Phone,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
+import HeroContent from "@/components/HeroContent";
 import PlaceholderImage from "@/components/PlaceholderImage";
 
 export default function Home() {
@@ -38,8 +34,8 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* HERO — Full image background, compact text block on left */}
-      <section className="relative min-h-screen overflow-hidden">
+      {/* HERO — Full image, text block bottom-right */}
+      <section className="relative h-[calc(100vh-80px)] min-h-[550px] overflow-hidden">
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
@@ -47,81 +43,29 @@ export default function Home() {
             alt="Illuminated channel letters manufactured by Sunlite Signs"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/20" />
-          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-primary-dark to-transparent" />
+          <div className="absolute inset-0 bg-black/20" />
         </div>
 
-        <div className="relative z-10 container-max px-4 sm:px-6 lg:px-8 pt-36 pb-28 lg:pt-44 lg:pb-36 flex items-center min-h-screen">
-          <div className="max-w-xl">
-            <div className="inline-flex items-center gap-2 bg-brand-gold/20 border border-brand-gold/40 rounded-sm px-3 py-1 mb-6 w-fit">
-              <Lock className="w-3 h-3 text-brand-gold" />
-              <span className="text-brand-gold text-[10px] font-heading font-bold uppercase tracking-widest">
-                Wholesale Only
-              </span>
-            </div>
+        {/* Navigation arrows (decorative) */}
+        <button className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-white/40 hover:text-white transition-colors" aria-label="Previous">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7" /></svg>
+        </button>
+        <button className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center text-white/40 hover:text-white transition-colors" aria-label="Next">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" /></svg>
+        </button>
 
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-[1.1] mb-4">
+        {/* Text block — bottom right */}
+        <HeroContent className="absolute bottom-0 right-0 z-10 bg-primary-dark/85 backdrop-blur-sm px-8 sm:px-12 lg:px-16 py-8 sm:py-10 max-w-xl lg:max-w-2xl">
+          <p className="text-white/60 font-heading text-sm sm:text-base tracking-wide mb-2">
+            German-Engineered &middot; Only For The Trade
+          </p>
+          <div className="flex items-start gap-3">
+            <div className="w-1 h-12 sm:h-14 bg-brand-gold mt-1 shrink-0" />
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-[1.1] uppercase">
               Wholesale Channel Letters
-              <br />
-              <span className="text-brand-gold">&amp; Illuminated Signs</span>
             </h1>
-
-            <p className="text-base text-white/70 mb-6 max-w-md leading-relaxed">
-              German-engineered. UL listed. Built for sign shops.
-              We never sell retail.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
-              <Link href="/get-a-quote" className="btn-primary text-sm px-7 py-3.5">
-                Get Your Product Started
-              </Link>
-              <a href="tel:+1234567890" className="btn-secondary text-sm px-7 py-3.5 gap-2 border-white/30 hover:border-brand-gold">
-                <Phone className="w-4 h-4" />
-                (123) 456-7890
-              </a>
-            </div>
-
-            <div className="flex gap-6">
-              {[
-                { value: "48hr", label: "Quotes" },
-                { value: "3wk", label: "Delivery" },
-                { value: "UL", label: "Listed" },
-                { value: "100%", label: "Wholesale" },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <div className="text-xl font-heading font-bold text-brand-gold">{stat.value}</div>
-                  <div className="text-[10px] text-white/40 font-heading uppercase tracking-wider">{stat.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
-        </div>
-
-        <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/40 backdrop-blur-sm">
-          <div className="container-max px-4 sm:px-6 lg:px-8 py-3">
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[10px] font-heading uppercase tracking-wider text-white/50">
-              <span className="flex items-center gap-1.5">
-                <Lock className="w-3 h-3 text-brand-gold" /> Wholesale Only
-              </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Shield className="w-3 h-3 text-brand-gold" /> UL Listed
-              </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Globe className="w-3 h-3 text-brand-gold" /> German Engineering
-              </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="w-3 h-3 text-brand-gold" /> 48-Hour Quotes
-              </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Truck className="w-3 h-3 text-brand-gold" /> USA &amp; Canada
-              </span>
-            </div>
-          </div>
-        </div>
+        </HeroContent>
       </section>
 
       {/* CUSTOM EUROPEAN SIGNAGE WHOLESALE — Tagline + Our Story teaser */}
@@ -359,8 +303,8 @@ export default function Home() {
                 </Link>
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-text-light/50">
-                <a href="tel:+1234567890" className="hover:text-brand-gold transition-colors">
-                  (123) 456-7890
+                <a href="tel:+6892940912" className="hover:text-brand-gold transition-colors">
+                  (689) 294-0912
                 </a>
                 <a href="mailto:hello@sunlitesigns.com" className="hover:text-brand-gold transition-colors">
                   hello@sunlitesigns.com

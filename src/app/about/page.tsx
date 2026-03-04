@@ -218,11 +218,11 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-text-light/50 text-sm">
                 <a
-                  href="tel:+1234567890"
+                  href="tel:+6892940912"
                   className="inline-flex items-center gap-2 hover:text-brand-gold transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  (123) 456-7890
+                  (689) 294-0912
                 </a>
                 <a
                   href="mailto:hello@sunlitesigns.com"
