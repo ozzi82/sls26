@@ -51,15 +51,13 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/20" />
         </div>
 
-        <div className="relative z-10 container-max px-4 sm:px-6 lg:px-8 pt-40 pb-32 lg:pt-52 lg:pb-40 flex items-center min-h-screen">
-          <HeroContent className="max-w-lg">
+        <div className="relative z-10 container-max px-4 sm:px-6 lg:px-8 pt-32 pb-24 lg:pt-40 lg:pb-32 flex items-center min-h-screen">
+          <HeroContent className="bg-primary-dark/80 backdrop-blur-sm px-8 sm:px-10 py-8 sm:py-10 max-w-xl rounded-sm">
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-white leading-[1.1] mb-3">
-              Wholesale Channel Letters
-              <br />
-              <span className="text-brand-gold">&amp; Illuminated Signs</span>
+              Wholesale Channel Letters <span className="text-brand-gold">&amp; Illuminated Signs</span>
             </h1>
 
-            <p className="text-sm text-white/60 mb-5 max-w-sm">
+            <p className="text-sm text-white/60 mb-6">
               German-engineered. UL listed. Built for sign shops.
             </p>
 
@@ -75,27 +73,27 @@ export default function Home() {
           </HeroContent>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/40 backdrop-blur-sm">
-          <div className="container-max px-4 sm:px-6 lg:px-8 py-3">
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[10px] font-heading uppercase tracking-wider text-white/50">
-              <span className="flex items-center gap-1.5">
-                <Lock className="w-3 h-3 text-brand-gold" /> Wholesale Only
+        <div className="absolute bottom-0 left-0 right-0 z-10 border-t border-white/10 bg-black/50 backdrop-blur-sm">
+          <div className="container-max px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs font-heading uppercase tracking-wider text-white/70">
+              <span className="flex items-center gap-2">
+                <Lock className="w-3.5 h-3.5 text-brand-gold" /> Wholesale Only
               </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Shield className="w-3 h-3 text-brand-gold" /> UL Listed
+              <span className="hidden sm:inline text-white/30">|</span>
+              <span className="flex items-center gap-2">
+                <Shield className="w-3.5 h-3.5 text-brand-gold" /> UL Listed
               </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Globe className="w-3 h-3 text-brand-gold" /> German Engineering
+              <span className="hidden sm:inline text-white/30">|</span>
+              <span className="flex items-center gap-2">
+                <Globe className="w-3.5 h-3.5 text-brand-gold" /> German Engineering
               </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="w-3 h-3 text-brand-gold" /> 48-Hour Quotes
+              <span className="hidden sm:inline text-white/30">|</span>
+              <span className="flex items-center gap-2">
+                <Clock className="w-3.5 h-3.5 text-brand-gold" /> 48-Hour Quotes
               </span>
-              <span className="hidden sm:inline text-white/20">|</span>
-              <span className="flex items-center gap-1.5">
-                <Truck className="w-3 h-3 text-brand-gold" /> USA &amp; Canada
+              <span className="hidden sm:inline text-white/30">|</span>
+              <span className="flex items-center gap-2">
+                <Truck className="w-3.5 h-3.5 text-brand-gold" /> USA &amp; Canada
               </span>
             </div>
           </div>
